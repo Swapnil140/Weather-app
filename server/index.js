@@ -157,7 +157,7 @@ app.post('/api/cities', async (req, res) => {
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
-  res.status(200).json({ 
+  res.status(500).json({ 
     status: 'OK', 
     message: 'Weather API Server is running',
     timestamp: new Date().toISOString()
